@@ -6,7 +6,7 @@ from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Application, CommandHandler, CallbackQueryHandler, MessageHandler, filters, ContextTypes
 
 # ===== НАСТРОЙКИ =====
-BOT_TOKEN = os.environ.get('8342641332:AAGhf3sYgJTKuhkMo0bZV4IfOxKRVctXobc','YOUR_BOT_TOKEN_HERE')
+BOT_TOKEN = os.environ.get('BOT_TOKEN','YOUR_BOT_TOKEN_HERE')
 ADMIN_IDS = [int(id.strip()) for id in os.environ.get('ADMIN_IDS', '123456789').split(',')]
 
 # Автоматические пути
